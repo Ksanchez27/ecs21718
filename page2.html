@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+    <title>Final Project by Keilu Sanchez</title>
+  </head>
+  <body>
+
+    <style>
+      /* Fonts from Google Fonts - more at https://fonts.google.com */
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+      @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /* Make the image fully responsive */
+      .carousel-inner img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .myImage {
+        background-image: url("Screen%20Shot%202018-03-01%20at%209.32.50%20AM.png");
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .topnav a.active {
+        background-color: #4CAF50;
+        color: white;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+      }
+
+      .jumbotron{
+        background-color:lightskyblue;
+      }
+
+      .jumbotron {
+        font-family:fantasy
+      }
+
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      /* Style the links inside the navigation bar */
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      /* Change the color of links on hover */
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Add a color to the active/current link */
+      .navbar a.active {
+        color: white;
+      }
+
+
+      body {
+        position: relative;
+      }
+      ul.nav-pills {
+        top: 20px;
+        position: fixed;
+      }
+      div.col-8 div {
+        height: 500px;
+      }</style>
+
+    <div class="topnav">
+      <a href="https://ksanchez27.github.io/ecs21718/HTML/HomePage.html">Home</a>
+      <a class="active" href="#">Education/Life goals/accomplishments</a>
+      <a href="#">Hobbies/least and most fav things</a>
+      <a href="#">Timeline</a>
+    </div> 
+    
+
+    <div class="jumbotron">
+      <center>
+        <h1>My education/life goals/ and accomplishments</h1> 
+        <p>Keilu Sebastian Sanchez</p>
+      </center>
+    </div>
+
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="https://thimbleprojects.org/ksanchez27/432738">Education /Life goals /Accomplishments.</a>
+      <a href="#">Hobbies/least and most fav things</a>
+      <a href="#">Timeline.</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click here for more info</span>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="http://www.lanetech.org/img-featured/photo1.png" alt="family picture">
+          </div>
+          <div class="carousel-item">
+            <img src="http://lanetech.org/features/football.png" alt="Baby pic">
+          </div>
+          <div class="carousel-item">
+            <img src="https://thumbs.dreamstime.com/b/vector-cartoon-happy-people-received-money-illustration-prize-winnings-isolated-white-background-family-won-85259095.jpg" alt="My nickname">
+          </div>
+          <div class="carousel-item">
+            <img src="FullSizeRender-2.jpg" alt="Lane Tech Football">
+        </div>
+          
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      </div>
+    </center>
+    
+    <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="col-sm-3 col-4" id="myScrollspy">
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#section1">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section2">Life Goals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section3">Accomplishments</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="col-sm-9 col-8">
+            <div id="section1" class="bg-success">    
+              <h1>My education</h1>
+              <ol>I went to a preschool somewhere in DeKalb Illinois</ol>
+              <ol>Then I moved to Chicago and went to kindergarten at an elementary school around lincoln park</ol>
+              <ol>Then I went to a small elementary school in the heart of lincoln park where I stayed for 8 years until I graduated and went and am noq enrolled at Lane</ol>
+              <ol>At lane Tech I take AP human geo,Geometry, Computer science, English, Japanese, Biology,and I am in JROTC</ol>
+            </div>
+            <div id="section2" class="bg-warning"> 
+              <h1>Life goals</h1>
+              <ol>Life a long and properous life</ol>
+              <ol>Be happy as much as I possibly can</ol>
+              <ol>Sleep more instead of code</ol>
+              <ol>Have an either stable finacial situation or be very rich</ol>
+              <ol>Get married and have kids(gonnna be waiting for awhile tho)</ol>
+              <ol>Have many good trustworthy friends</ol>
+              <ol>To have NEVER done illigal drugs</ol>
+              <ol>To do something good that I get known for and become a little to very important</ol>
+            </div>        
+            <div id="section3" class="bg-secondary">         
+              <h1>Accomplishments</h1>
+              <ol>I graduated from kindergarten and felt very succesful</ol>
+              <ol>I got honor-roll 3 years in a row during 1st-3rd grade aswell as all of middle school</ol>
+              <ol>I was student of the month multiple times during 1st and 3rd grade too</ol>
+              <ol>I got straight A's 8th grade year</ol> 
+              <ol>I played flag football for my CPS school and made it to finals</ol>
+              <ol>I graduated 8th grade</ol>
+              <ol>I made it into Lane Tech highschool</ol>
+              <ol>I made it onto the Football and volleyball team for lane</ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+   
+    
+  </body>
+</html>
